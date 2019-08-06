@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1872862522F9D46F00497FB9 /* TORoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872862322F9D46F00497FB9 /* TORoundedButton.m */; };
 		7AB4305A22F97BC500709089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4305922F97BC500709089 /* AppDelegate.m */; };
 		7AB4306222F97BC600709089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB4306122F97BC600709089 /* Assets.xcassets */; };
 		7AB4306522F97BC600709089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB4306322F97BC600709089 /* LaunchScreen.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1872862322F9D46F00497FB9 /* TORoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORoundedButton.m; sourceTree = "<group>"; };
+		1872862422F9D46F00497FB9 /* TORoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORoundedButton.h; sourceTree = "<group>"; };
 		7AB4305522F97BC500709089 /* UploadDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UploadDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB4305822F97BC500709089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AB4305922F97BC500709089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +61,8 @@
 		7AB4305722F97BC500709089 /* UploadDownload */ = {
 			isa = PBXGroup;
 			children = (
+				1872862422F9D46F00497FB9 /* TORoundedButton.h */,
+				1872862322F9D46F00497FB9 /* TORoundedButton.m */,
 				7AB4305822F97BC500709089 /* AppDelegate.h */,
 				7AB4305922F97BC500709089 /* AppDelegate.m */,
 				7AB4306122F97BC600709089 /* Assets.xcassets */,
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1872862522F9D46F00497FB9 /* TORoundedButton.m in Sources */,
 				7AB4306822F97BC600709089 /* main.m in Sources */,
 				7AB4305A22F97BC500709089 /* AppDelegate.m in Sources */,
 				7AB4307122F97BF100709089 /* RootViewController.m in Sources */,
