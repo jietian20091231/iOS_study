@@ -13,6 +13,7 @@
 		7A30B8E522FACDA00081ADC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A30B8E422FACDA00081ADC7 /* main.m */; };
 		7A30B8F122FACDE00081ADC7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A30B8EF22FACDE00081ADC7 /* RootViewController.m */; };
 		7A30B8F222FACDE00081ADC7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A30B8F022FACDE00081ADC7 /* RootViewController.xib */; };
+		7A30B8F522FBF9720081ADC7 /* TORoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A30B8F322FBF9720081ADC7 /* TORoundedButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7A30B8EE22FACDE00081ADC7 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
 		7A30B8EF22FACDE00081ADC7 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
 		7A30B8F022FACDE00081ADC7 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		7A30B8F322FBF9720081ADC7 /* TORoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORoundedButton.m; sourceTree = SOURCE_ROOT; };
+		7A30B8F422FBF9720081ADC7 /* TORoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORoundedButton.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		7A30B8D422FACD9F0081ADC7 /* DataPickerSample */ = {
 			isa = PBXGroup;
 			children = (
+				7A30B8F422FBF9720081ADC7 /* TORoundedButton.h */,
+				7A30B8F322FBF9720081ADC7 /* TORoundedButton.m */,
 				7A30B8EE22FACDE00081ADC7 /* RootViewController.h */,
 				7A30B8EF22FACDE00081ADC7 /* RootViewController.m */,
 				7A30B8F022FACDE00081ADC7 /* RootViewController.xib */,
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A30B8F522FBF9720081ADC7 /* TORoundedButton.m in Sources */,
 				7A30B8E522FACDA00081ADC7 /* main.m in Sources */,
 				7A30B8D722FACD9F0081ADC7 /* AppDelegate.m in Sources */,
 				7A30B8F122FACDE00081ADC7 /* RootViewController.m in Sources */,
