@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A689A0622FD06100044AE3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A689A0522FD06100044AE3D /* AppDelegate.m */; };
+		7A689A0E22FD06110044AE3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A0D22FD06110044AE3D /* Assets.xcassets */; };
+		7A689A1122FD06110044AE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A0F22FD06110044AE3D /* LaunchScreen.storyboard */; };
+		7A689A1422FD06110044AE3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A689A1322FD06110044AE3D /* main.m */; };
+		7A689A1C22FD06390044AE3D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A689A1B22FD06390044AE3D /* RootViewController.m */; };
+		7A689A2722FD07DA0044AE3D /* athletics.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A1E22FD07DA0044AE3D /* athletics.gif */; };
+		7A689A2822FD07DA0044AE3D /* archery.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A1F22FD07DA0044AE3D /* archery.gif */; };
+		7A689A2922FD07DA0044AE3D /* boxing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A2022FD07DA0044AE3D /* boxing.gif */; };
+		7A689A2A22FD07DA0044AE3D /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A2122FD07DA0044AE3D /* events.plist */; };
+		7A689A2B22FD07DA0044AE3D /* basketball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A2222FD07DA0044AE3D /* basketball.gif */; };
+		7A689A2C22FD07DA0044AE3D /* canoe-sprint.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A2322FD07DA0044AE3D /* canoe-sprint.gif */; };
+		7A689A2D22FD07DA0044AE3D /* beach-volleyball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A2422FD07DA0044AE3D /* beach-volleyball.gif */; };
+		7A689A2E22FD07DA0044AE3D /* badminton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A2522FD07DA0044AE3D /* badminton.gif */; };
+		7A689A2F22FD07DA0044AE3D /* canoe-slalom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A689A2622FD07DA0044AE3D /* canoe-slalom.gif */; };
+		7A689A3222FD08170044AE3D /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A689A3122FD08170044AE3D /* EventCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A689A0122FD06100044AE3D /* CollectionViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A689A0422FD06100044AE3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7A689A0522FD06100044AE3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7A689A0D22FD06110044AE3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A689A1022FD06110044AE3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A689A1222FD06110044AE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A689A1322FD06110044AE3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A689A1A22FD06380044AE3D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		7A689A1B22FD06390044AE3D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		7A689A1E22FD07DA0044AE3D /* athletics.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = athletics.gif; sourceTree = "<group>"; };
+		7A689A1F22FD07DA0044AE3D /* archery.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = archery.gif; sourceTree = "<group>"; };
+		7A689A2022FD07DA0044AE3D /* boxing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = boxing.gif; sourceTree = "<group>"; };
+		7A689A2122FD07DA0044AE3D /* events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
+		7A689A2222FD07DA0044AE3D /* basketball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = basketball.gif; sourceTree = "<group>"; };
+		7A689A2322FD07DA0044AE3D /* canoe-sprint.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "canoe-sprint.gif"; sourceTree = "<group>"; };
+		7A689A2422FD07DA0044AE3D /* beach-volleyball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "beach-volleyball.gif"; sourceTree = "<group>"; };
+		7A689A2522FD07DA0044AE3D /* badminton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = badminton.gif; sourceTree = "<group>"; };
+		7A689A2622FD07DA0044AE3D /* canoe-slalom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "canoe-slalom.gif"; sourceTree = "<group>"; };
+		7A689A3022FD08170044AE3D /* EventCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventCollectionViewCell.h; sourceTree = "<group>"; };
+		7A689A3122FD08170044AE3D /* EventCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A6899FE22FD06100044AE3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A6899F822FD06100044AE3D = {
+			isa = PBXGroup;
+			children = (
+				7A689A0322FD06100044AE3D /* CollectionViewSample */,
+				7A689A0222FD06100044AE3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A689A0222FD06100044AE3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A689A0122FD06100044AE3D /* CollectionViewSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A689A0322FD06100044AE3D /* CollectionViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				7A689A1D22FD07DA0044AE3D /* Olympics_Pic */,
+				7A689A0422FD06100044AE3D /* AppDelegate.h */,
+				7A689A0522FD06100044AE3D /* AppDelegate.m */,
+				7A689A0D22FD06110044AE3D /* Assets.xcassets */,
+				7A689A0F22FD06110044AE3D /* LaunchScreen.storyboard */,
+				7A689A1222FD06110044AE3D /* Info.plist */,
+				7A689A1322FD06110044AE3D /* main.m */,
+				7A689A1A22FD06380044AE3D /* RootViewController.h */,
+				7A689A1B22FD06390044AE3D /* RootViewController.m */,
+				7A689A3022FD08170044AE3D /* EventCollectionViewCell.h */,
+				7A689A3122FD08170044AE3D /* EventCollectionViewCell.m */,
+			);
+			path = CollectionViewSample;
+			sourceTree = "<group>";
+		};
+		7A689A1D22FD07DA0044AE3D /* Olympics_Pic */ = {
+			isa = PBXGroup;
+			children = (
+				7A689A1E22FD07DA0044AE3D /* athletics.gif */,
+				7A689A1F22FD07DA0044AE3D /* archery.gif */,
+				7A689A2022FD07DA0044AE3D /* boxing.gif */,
+				7A689A2122FD07DA0044AE3D /* events.plist */,
+				7A689A2222FD07DA0044AE3D /* basketball.gif */,
+				7A689A2322FD07DA0044AE3D /* canoe-sprint.gif */,
+				7A689A2422FD07DA0044AE3D /* beach-volleyball.gif */,
+				7A689A2522FD07DA0044AE3D /* badminton.gif */,
+				7A689A2622FD07DA0044AE3D /* canoe-slalom.gif */,
+			);
+			path = Olympics_Pic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A689A0022FD06100044AE3D /* CollectionViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A689A1722FD06110044AE3D /* Build configuration list for PBXNativeTarget "CollectionViewSample" */;
+			buildPhases = (
+				7A6899FD22FD06100044AE3D /* Sources */,
+				7A6899FE22FD06100044AE3D /* Frameworks */,
+				7A6899FF22FD06100044AE3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollectionViewSample;
+			productName = CollectionViewSample;
+			productReference = 7A689A0122FD06100044AE3D /* CollectionViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A6899F922FD06100044AE3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jie;
+				TargetAttributes = {
+					7A689A0022FD06100044AE3D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 7A6899FC22FD06100044AE3D /* Build configuration list for PBXProject "CollectionViewSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A6899F822FD06100044AE3D;
+			productRefGroup = 7A689A0222FD06100044AE3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A689A0022FD06100044AE3D /* CollectionViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A6899FF22FD06100044AE3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A689A1122FD06110044AE3D /* LaunchScreen.storyboard in Resources */,
+				7A689A2E22FD07DA0044AE3D /* badminton.gif in Resources */,
+				7A689A2B22FD07DA0044AE3D /* basketball.gif in Resources */,
+				7A689A2822FD07DA0044AE3D /* archery.gif in Resources */,
+				7A689A0E22FD06110044AE3D /* Assets.xcassets in Resources */,
+				7A689A2722FD07DA0044AE3D /* athletics.gif in Resources */,
+				7A689A2D22FD07DA0044AE3D /* beach-volleyball.gif in Resources */,
+				7A689A2922FD07DA0044AE3D /* boxing.gif in Resources */,
+				7A689A2A22FD07DA0044AE3D /* events.plist in Resources */,
+				7A689A2F22FD07DA0044AE3D /* canoe-slalom.gif in Resources */,
+				7A689A2C22FD07DA0044AE3D /* canoe-sprint.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A6899FD22FD06100044AE3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A689A1422FD06110044AE3D /* main.m in Sources */,
+				7A689A3222FD08170044AE3D /* EventCollectionViewCell.m in Sources */,
+				7A689A0622FD06100044AE3D /* AppDelegate.m in Sources */,
+				7A689A1C22FD06390044AE3D /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A689A0F22FD06110044AE3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A689A1022FD06110044AE3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A689A1522FD06110044AE3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7A689A1622FD06110044AE3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A689A1822FD06110044AE3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollectionViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.home.study.CollectionViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A689A1922FD06110044AE3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollectionViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.home.study.CollectionViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A6899FC22FD06100044AE3D /* Build configuration list for PBXProject "CollectionViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A689A1522FD06110044AE3D /* Debug */,
+				7A689A1622FD06110044AE3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A689A1722FD06110044AE3D /* Build configuration list for PBXNativeTarget "CollectionViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A689A1822FD06110044AE3D /* Debug */,
+				7A689A1922FD06110044AE3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A6899F922FD06100044AE3D /* Project object */;
+}
