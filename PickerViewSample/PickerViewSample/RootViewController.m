@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGRect sreen = [UIScreen mainScreen].bounds;
+    CGRect screen = [UIScreen mainScreen].bounds;
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"provinces_cities" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
@@ -35,7 +35,7 @@
     CGFloat pWidth = 320;
     CGFloat pHeight = 167;
     
-    _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 100, pWidth, pHeight)];
+    _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake((screen.size.width - pWidth) / 2, 100, pWidth, pHeight)];
 
     _pickerView.dataSource = self;
     _pickerView.delegate = self;
