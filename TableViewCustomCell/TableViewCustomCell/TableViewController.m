@@ -14,16 +14,19 @@
 
 @interface TableViewController ()
 @property (nonatomic, strong) NSArray * teamsList;
+@property CGFloat rowHeight;
 @end
 
 @implementation TableViewController
 
 - (void)viewDidLoad {
+    NSLog(@"TableViewController:viewDidLoad");
     [super viewDidLoad];
     NSString *plistPath = [[NSBundle mainBundle] pathForResource: @"team" ofType:@"plist"];
     _teamsList = [[NSArray alloc] initWithContentsOfFile:plistPath];
     NSLog(@"_teamList = %li", [_teamsList count]);
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    _rowHeight = 60;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -37,16 +40,20 @@
 //}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"TableViewController:numberOfRowsInSection");
     return [_teamsList count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CustomTableViewCell *cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    NSLog(@"TableViewController:cellForRowAtIndexPath");
+    CustomTableViewCell *cell = [[CustomTableViewCell alloc] initWithMyStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier rowHeight: _rowHeight];
     NSUInteger row = [indexPath row];
     
     NSDictionary *rowDict = _teamsList[row];
     cell.myLabel.text = rowDict[@"name"];
+    
+    cell.mySubLabel.text = rowDict[@"image"];
     
     NSString *imagePath = [[NSString alloc] initWithFormat:@"%@.png", rowDict[@"image"]];
     cell.myImageView.image = [UIImage imageNamed:imagePath];
@@ -55,6 +62,11 @@
     
     return cell;
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"TableViewController:heightForRowAtIndexPath");
+    return self.rowHeight;
 }
 
 

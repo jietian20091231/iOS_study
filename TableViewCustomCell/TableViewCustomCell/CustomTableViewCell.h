@@ -13,7 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CustomTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel  *myLabel;
+@property (nonatomic, strong) UILabel  *mySubLabel;
 @property (nonatomic, strong) UIImageView *myImageView;
+
+
+- (instancetype)initWithMyStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier rowHeight: (CGFloat) rowHeight;
 
 @end
 
