@@ -11,10 +11,8 @@
 @implementation CustomTableViewCell
 
 - (instancetype)initWithMyStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier rowHeight: (CGFloat) rowHeight  {
-    NSLog(@"CustomTableViewCell:initWithStyle reuseIdentifier = %@", reuseIdentifier);
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        NSLog(@"self.frame.size.height = %.2f", rowHeight);
         CGFloat cellHight = rowHeight;
         CGFloat imageWidth = 39;
         CGFloat imageHeight = 28;
@@ -24,7 +22,7 @@
         [self addSubview: _myImageView];
         
         CGFloat labelWidth = 120;
-        CGFloat labelHeight = 16;
+        CGFloat labelHeight = 20;
         CGFloat labelLeftView = imageWidth + 60 ;
         _myLabel = [[UILabel alloc] initWithFrame:CGRectMake(labelLeftView, (rowHeight / 2 - labelHeight) / 2, labelWidth, labelHeight)];
         [self addSubview: _myLabel];

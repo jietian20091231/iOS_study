@@ -20,8 +20,6 @@
 @property (nonatomic, strong) NSMutableArray * listFilterTeams;
 @property CGFloat rowHeight;
 
-- (void) filterContentForSearchText:(NSString *) searchText scope: (NSUInteger)scope;
-
 @end
 
 @implementation TableViewController
@@ -32,17 +30,16 @@
     NSString *plistPath = [[NSBundle mainBundle] pathForResource: @"team" ofType:@"plist"];
     _teamsList = [[NSArray alloc] initWithContentsOfFile:plistPath];
     NSLog(@"_teamList = %li", [_teamsList count]);
+    _listFilterTeams = [NSMutableArray arrayWithArray: _teamsList];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-    _rowHeight = 60;
+    _rowHeight = 70;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
     _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    //_searchController.searchResultsUpdater = self;
+    _searchController.searchResultsUpdater = self;
     _searchController.dimsBackgroundDuringPresentation = NO;
-    //_searchController.searchBar.delegate = self;
-    
-    [self filterContentForSearchText:@"" scope: -1];
+    _searchController.searchBar.delegate = self;
     
     self.tableView.tableHeaderView = _searchController.searchBar;
     [_searchController.searchBar sizeToFit];
@@ -58,37 +55,34 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSLog(@"TableViewController:numberOfRowsInSection");
-    return [_teamsList count];
+    return [_listFilterTeams count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"TableViewController:cellForRowAtIndexPath");
     CustomTableViewCell *cell = [[CustomTableViewCell alloc] initWithMyStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier rowHeight: _rowHeight];
     NSUInteger row = [indexPath row];
     
-    NSDictionary *rowDict = _teamsList[row];
-    cell.myLabel.text = rowDict[@"name"];
-    
-    cell.mySubLabel.text = rowDict[@"image"];
-    
-    NSString *imagePath = [[NSString alloc] initWithFormat:@"%@.png", rowDict[@"image"]];
-    cell.myImageView.image = [UIImage imageNamed:imagePath];
-    
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    if ( [_listFilterTeams count] > 0 ) {
+        NSDictionary *rowDict = _listFilterTeams[row];
+        cell.myLabel.text = rowDict[@"name"];
+        
+        cell.mySubLabel.text = rowDict[@"image"];
+        
+        NSString *imagePath = [[NSString alloc] initWithFormat:@"%@.png", rowDict[@"image"]];
+        cell.myImageView.image = [UIImage imageNamed:imagePath];
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
     
     return cell;
     
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"TableViewController:heightForRowAtIndexPath");
     return self.rowHeight;
 }
 
-- (void) filterContentForSearchText:(NSString *) searchText scope: (NSUInteger)scope {
-    
-}
 
 
 /*
@@ -125,9 +119,37 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
+#pragma mark
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"TableViewController:searchBarCancelButtonClicked");
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"TableViewController:searchBarSearchButtonClicked");
+    NSString *searchText = _searchController.searchBar.text;
+    NSLog(@"serachText = %@", searchText);
+    if ([searchText length] == 0) {
+        _listFilterTeams = [NSMutableArray arrayWithArray: _teamsList];
+        return;
+    }
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"image CONTAINS[c] %@", searchText];
+    NSArray *tempArray = [_teamsList filteredArrayUsingPredicate: predicate];
+    _listFilterTeams = [NSMutableArray arrayWithArray: tempArray];
+    [self.tableView reloadData];
+    
+    
+}
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    NSLog(@"TableViewController:updateSearchResultsForSearchController");
+    _listFilterTeams = [NSMutableArray arrayWithArray: _teamsList];
+    [self.tableView reloadData];
+}
+
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
