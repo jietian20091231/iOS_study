@@ -129,6 +129,23 @@
     return YES;
 }
 
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    NSObject *moveObj = _showPresidentsList[sourceIndexPath.row];
+    [_showPresidentsList removeObjectAtIndex:sourceIndexPath.row];
+    [_showPresidentsList insertObject:moveObj atIndex:destinationIndexPath.row];
+    
+}
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSUInteger row = [indexPath row];
+    //NSLog(@"row = %li", row);
+    if (row < [_showPresidentsList count]) {
+        return YES;
+    }
+    
+    return NO;
+}
+
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"RootViewController:commitEditingStyle indexPath section %li, row %li", [indexPath section], [indexPath row]);
